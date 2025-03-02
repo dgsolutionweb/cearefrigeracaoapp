@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-gray-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium text-white transition-all duration-300 flex items-center justify-center gap-2;
+  }
+  
+  .btn-whatsapp {
+    @apply bg-secondary hover:bg-green-600;
+  }
+  
+  .btn-email {
+    @apply bg-tertiary hover:bg-red-600;
+  }
+  
+  .btn-instagram {
+    @apply bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90;
+  }
+  
+  .service-card {
+    @apply flex flex-col items-center justify-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .service-icon {
+    @apply w-16 h-16 p-3 bg-primary/10 rounded-full text-primary mb-4;
+  }
+}
